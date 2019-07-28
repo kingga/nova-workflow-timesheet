@@ -1,0 +1,149 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "1ba5dacf1bead2b64352d4c817f394f4",
+    "packages": [
+        {
+            "name": "kingga/laravel-workflow-timesheet",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kingga/laravel-workflow-timesheet.git",
+                "reference": "5e2ef693fc648bee2e195c72d5f7a9bae72f91f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kingga/laravel-workflow-timesheet/zipball/5e2ef693fc648bee2e195c72d5f7a9bae72f91f7",
+                "reference": "5e2ef693fc648bee2e195c72d5f7a9bae72f91f7",
+                "shasum": ""
+            },
+            "require": {
+                "kingga/workflow-timesheet": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Kingga\\LaravelWorkflowTimesheet\\WorkflowTimesheetServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Kingga\\LaravelWorkflowTimesheet\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Isaac Skelton",
+                    "email": "contact@isaacskelton.com"
+                }
+            ],
+            "description": "The laravel interface for kingga/workflow, this includes models which will store this information in the database and then add it back into the structures.",
+            "support": {
+                "source": "https://github.com/kingga/laravel-workflow-timesheet/tree/master",
+                "issues": "https://github.com/kingga/laravel-workflow-timesheet/issues"
+            },
+            "time": "2019-07-27T23:44:12+00:00"
+        },
+        {
+            "name": "kingga/workflow-timesheet",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kingga/workflow-timesheet.git",
+                "reference": "e6ceecaf9bb770cea1da1e9746df1170fa0427b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kingga/workflow-timesheet/zipball/e6ceecaf9bb770cea1da1e9746df1170fa0427b6",
+                "reference": "e6ceecaf9bb770cea1da1e9746df1170fa0427b6",
+                "shasum": ""
+            },
+            "require-dev": {
+                "brainmaestro/composer-git-hooks": "^2.7",
+                "codeception/codeception": "^3.0",
+                "phan/phan": "^2.2",
+                "symfony/var-dumper": "^4.3"
+            },
+            "type": "library",
+            "extra": {
+                "hooks": {
+                    "pre-push": [
+                        "composer test",
+                        "composer phan"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Kingga\\WorkflowTimesheet\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Isaac Skelton",
+                    "email": "contact@isaacskelton.com"
+                }
+            ],
+            "description": "Xero workflow weekly CSV parser.",
+            "time": "2019-07-26T06:37:28+00:00"
+        },
+        {
+            "name": "titasgailius/search-relations",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TitasGailius/nova-search-relations.git",
+                "reference": "1e7408a678b9258537cb15ceb58a56016501243a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TitasGailius/nova-search-relations/zipball/1e7408a678b9258537cb15ceb58a56016501243a",
+                "reference": "1e7408a678b9258537cb15ceb58a56016501243a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Titasgailius\\SearchRelations\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova tool.",
+            "keywords": [
+                "laravel",
+                "nova",
+                "relations",
+                "search"
+            ],
+            "time": "2018-12-18T18:06:27+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "kingga/laravel-workflow-timesheet": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

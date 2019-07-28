@@ -1,0 +1,38 @@
+{
+    "name": "kingga/nova-workflow-timesheet",
+    "description": "The nova extension to kingga/laravel-workflow-timesheet",
+    "type": "library",
+    "version": "1.0.0",
+    "keywords": [
+        "laravel",
+        "nova",
+        "kingga",
+        "resources",
+        "workflow",
+        "timesheet"
+    ],
+    "require": {
+        "titasgailius/search-relations": "^1.0",
+        "kingga/laravel-workflow-timesheet": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Isaac Skelton",
+            "email": "contact@isaacskelton.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Kingga\\NovaWorkflowTimesheet\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kingga\\NovaWorkflowTimesheet\\NovaWorkflowTimesheet"
+            ]
+        }
+    }
+}
